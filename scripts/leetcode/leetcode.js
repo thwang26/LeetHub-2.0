@@ -72,7 +72,7 @@ const encode = data => btoa(unescape(encodeURIComponent(data)));
  */
 const upload = async (token, hook, content, problem, filename, sha, message) => {
   const path = getPath(problem, filename);
-  const URL = `https://api.github.com/repos/${hook}/contents/${path}`;
+  const URL = `https://api.github.com/repos/${hook}/LeetCode/contents/${path}`;
 
   let data = {
     message,
